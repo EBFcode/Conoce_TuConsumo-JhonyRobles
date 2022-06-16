@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Calculadora consumo de Gasolina</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+
+        <div class="titular">
+            <h1>Calcula tu consumo de Gasolina ⛽</h1>
+        </div>
+        
+        <div class="headerMain">
+
+            <!-- Elegir Pais User -->
+            <select name="countries" id="pais">
+                <option value="otro">Pais: Otro</option>
+                <option value="rd">Republica Dominicana</option>
+                <option value="arg">Argentina</option>
+            </select>
+
+            <!-- Efecto para ver precio de la gasolina -->
+            
+            <button id="verPrecio">VER PRECIO GASOLINA</button>
+            
+        </div>
+        
+        
+            
+        <!-- Conociendo el consumo -->
+        <div class="conociendoElConsumo" style="Display: inline-block;">
+            <div class="pregunta_One">
+                <label style="Display: flex; flex-wrap: wrap;">
+                    <h2>Cual es el consumo de galon por kilometro de su vehiculo?</h2>
+                    <br>
+                    <input class="totalCaja" id="consumoPorGalon" type="number">
+                    
+                </label>
+    
+                <br>
+                <label style="Display: flex; flex-wrap: wrap; margin-bottom: 15px;">
+                    <h2>Cuantos kilometros recorreras? </h2>
+                    <input class="totalCaja" id="cuantosKilometros" type="number">
+                </label>
+    
+                <button id="button" type="button">Calcular</button>
+            </div>
+        </div>
+        
+        
+
+        <!-- Resultados -->
+        <div id="contenedorCalculo">
+            <h2 id="textoSuConsumo">esperando respuesta...</h2>
+            <div class="totalCaja">
+                <h2 id="totalConsumo">esperando respuesta...</h2>
+            </div>
+
+            <h2>Ida y vuelta:</h2>
+            <div class="totalCaja">
+                <h2 id="totalx2">esperando respuesta...</h2>
+            </div>
+        </div>
+        
+
+        <footer>
+            <h4></h4>
+        </footer>
+
+    </main>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

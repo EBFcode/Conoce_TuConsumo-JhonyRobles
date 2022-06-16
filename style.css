@@ -1,0 +1,188 @@
+/* Estilos de caja */
+body {
+    background-color: rgb(20, 12, 48);
+    font-family: 'Asap', sans-serif;
+    font-style: normal;
+    color: rgb(20, 12, 48);
+}
+
+main {
+    
+    width: 400px;
+    min-height: 400px;
+    background-color: rgb(167, 252, 255);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 6px 6px 15px rgba(210, 228, 130, 0.521);
+    border: solid 3px rgb(166, 190, 43);
+
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titular {
+    align-self: center;
+    color: rgb(255, 255, 255);
+    width: 430px;
+    min-height: 60px;
+    background-color: rgb(20, 12, 48);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+}
+
+.totalCaja {
+    align-self: center;
+    color: rgb(238, 176, 6);
+    width: 450px;
+    min-height: 60px;
+    background-color: rgb(20, 12, 48);
+    display: flex;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+
+    /* padding: 10px; */
+
+}
+
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pais {
+    color: rgb(238, 176, 6);
+    max-width: 60%;
+    min-height: 30px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(20, 12, 48);
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+
+    transition: all 0.3s;
+
+}
+
+#pais:hover {
+    width: 50%;
+    font-weight: bold;
+
+    background-color: rgb(238, 176, 6);
+    box-shadow: 8px 5px 15px rgba(238, 176, 6, 0.945);
+    border: solid 3px rgb(255, 255, 255);
+
+    color: #fff;
+
+}
+
+button {
+    color: rgb(238, 176, 6);
+    width: 100%;
+    min-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(20, 12, 48);
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+
+}
+
+.efectoVerPrecioGasolina {
+    display: flex;
+    justify-content: center;
+}
+
+#verPrecio {
+    color: rgb(238, 176, 6);
+    width: 30%;
+    min-height: 30px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(20, 12, 48);
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+
+    transition: all 0.3s;
+}
+
+
+
+#verPrecio::before {
+    background-color: rgb(219, 143, 143);
+    transition: all 0.3s;
+
+}
+
+#verPrecio::after {
+    background-color: rgb(238, 6, 6);
+    transition: all 0.3s;
+
+}
+
+#verPrecio:hover {
+    width: 40%;
+    font-weight: bold;
+
+    background-color: rgb(238, 6, 6);
+    box-shadow: 8px 5px 15px rgba(238, 6, 6, 0.945);
+    border: solid 3px rgb(255, 255, 255);
+
+    color: #fff;
+}
+
+
+button:hover {
+    background-color: rgb(238, 176, 6);
+    color: rgb(20, 12, 48);
+    transition: all 0.9s;
+
+}
+
+#contenedorCalculo {
+    display: none;
+    flex-wrap: wrap;
+}
+
+/* Gatico */
+.FotoGato {
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s;
+
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 300px;
+    }
+
+    .titular {
+        width: 350px;
+    }
+
+    .totalCaja {
+        width: 350px;
+
+    }
+}
