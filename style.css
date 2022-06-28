@@ -1,3 +1,11 @@
+*, *::before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
 /* Estilos de caja */
 body {
     background-color: rgb(20, 12, 48);
@@ -6,34 +14,122 @@ body {
     color: rgb(20, 12, 48);
 }
 
+header {
+    position: relative;
+    top: 150px;
+}
+
+.titular {
+    color: rgb(255, 255, 255);
+    width: 830px;
+    height: 90px;
+    background-color: rgb(20, 12, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+}
+
 main {
     
     width: 800px;
     min-height: 400px;
     background-color: rgb(167, 252, 255);
     border-radius: 15px;
-    padding: 15px;
-    box-shadow: 6px 6px 15px rgba(210, 228, 130, 0.521);
-    border: solid 3px rgb(166, 190, 43);
+    padding: 40px;
+    box-shadow: 6px 6px 15px rgba(167, 252, 255, 0.5);
 
     margin: 0 auto;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+
+    grid-template-areas: 
+    "0 0"
+    "COL1 COL2"
+    "COL3 COL3";
+
+    justify-items: center;
+    align-items: center;
 }
 
-.titular {
-    align-self: center;
-    color: rgb(255, 255, 255);
-    width: 830px;
-    min-height: 60px;
+.CajaBasica{
     background-color: rgb(20, 12, 48);
+    color: #fff;
+
     display: flex;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+
+    padding: 5px;
+    max-width: 250px;
+    height: 50px;
+    font-size: 20px;
 
     border-radius: 10px;
     border: solid 3px rgb(238, 176, 6);
     box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+    transition: all 0.1s;
 }
+
+.CajaBasica:hover{
+    background-color: rgb(238, 176, 6);
+}
+
+.CajaBasica:active{
+    background-color: rgb(238, 176, 6);
+}
+
+button{
+    background-color: rgb(238, 176, 6);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    border: solid 3px rgb(238, 176, 6);
+    box-shadow: 6px 2px 15px rgba(238, 176, 6, 0.945);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(20, 12, 48);
+}
+
+.btnSiguiente {
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+
+    grid-area: COL3;
+    transition: all 0.5s;
+}
+
+.btnSiguiente:hover{
+    width: 30%;
+}
+
+
+
+/* Efecto seleccionar pais */
+
+#pais {
+    grid-area: "COL1";
+    cursor: pointer;
+}
+
+/* End */
+
+
