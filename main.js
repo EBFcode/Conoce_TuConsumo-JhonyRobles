@@ -1,4 +1,22 @@
 // Comenzamos:
+
+// Obtener nombre de usuario
+// Primero averiguamos si tenemos ya los datos del usuario:
+
+let userData = () => { 
+    let userCountry = document.getElementById("pais").value;
+    localStorage.setItem('Pais', userCountry);
+
+    
+
+}
+
+// while (userData) {
+//     // pass
+// }
+
+
+
 let button = document.getElementById("button");
 let precioGasolina;
 
@@ -10,7 +28,6 @@ let onButtonClick = function() {
     
 
 
-    let userCountry = document.getElementById("pais").value;
     let monedaLocal;
     let countries = [["republica dominicana", "rd"],["argentina","arg"]];
 
@@ -78,7 +95,7 @@ let onButtonClick = function() {
 
 // ---------------------------------------------
 // Esta funcion de ver precio aun no funciona
-let btn_VerPrecio = document.getElementById("verPrecio");
+let btn_VerPrecio = document.getElementById("verUserName");
 
     btn_VerPrecio.onclick = () => {
         btn_VerPrecio.innerText = precioGasolina;
